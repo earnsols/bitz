@@ -254,7 +254,7 @@ onAuthStateChanged(auth, (user) => {
           const snapshot = await get(userRef);
           if (snapshot.exists()) {
             const pins = snapshot.val();
-            mainScreen.innerHTML = `<h2>Wallet</h2><p>Your balance is: ${pins} Pins</p>`;
+            mainScreen.innerHTML = `<h2>Wallet</h2><p>Your balance is: ${pins} Pins.<BR> Withdrawal available from 10 jan.<BR> 1000PINS = 1$</p>`;
           } else {
             mainScreen.innerHTML = `<h2>Wallet</h2><p>No data available.</p>`;
           }
